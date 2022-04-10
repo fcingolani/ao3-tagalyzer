@@ -9,12 +9,12 @@ I've tested it on the "TOLKIEN J. R. R. - Works & Related Fandoms" tag. You can 
 Quick and dirty explanation:
 
 1. Clone and install dependencies.
-2. Run with the tag works URL as an argument. e.g. "Tony Stark" tag URL is "https://archiveofourown.org/tags/Tony%20Stark/works", so:
-  ``
+2. Run with the tag works URL as an argument. E.g. "Tony Stark" tag URL is "https://archiveofourown.org/tags/Tony%20Stark/works", so:
+  ````
     $ node ao3 https://archiveofourown.org/tags/Tony%20Stark/works
-  ``
-3. Aaaand wait. The script includes a exponential backoff as AO3 servers will throttle you.
-4. After some minutes or hours depending on how many works are in the selected tag, you'll end up with a .json file in the folder with all the tag texts, types and appearance counts.
+  ````
+3. Aaaand wait. The script includes an exponential backoff as AO3 servers **will** throttle you.
+4. After some seconds, minutes or hours depending on how many works are in the selected tag, you'll end up with a .json file in the folder with all the tag texts, types and appearance counts.
 
 Then you can convert that JSON to CSV using a tool like [this one available online](https://www.convertcsv.com/json-to-csv.htm), or investigate the reasons on why there are at least 2 works with the tag "Totoro" that also include the tag "Non-Consensual Bondage".
 
