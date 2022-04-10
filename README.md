@@ -11,7 +11,7 @@ Quick and dirty explanation:
 1. Clone and install dependencies.
 2. Run with the tag works URL as an argument. E.g. "Tony Stark" tag URL is "https://archiveofourown.org/tags/Tony%20Stark/works", so:
   ````
-    $ node ao3 https://archiveofourown.org/tags/Tony%20Stark/works
+    $ node ao3-tagalyzer.js https://archiveofourown.org/tags/Tony%20Stark/works
   ````
 3. Aaaand wait. The script includes an exponential backoff as AO3 servers **will** throttle you.
 4. After some seconds, minutes or hours depending on how many works are in the selected tag, you'll end up with a .json file in the folder with all the tag texts, types and appearance counts.
